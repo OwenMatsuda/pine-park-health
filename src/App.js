@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {default as Pokemons} from './Pokemon.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1 style={{textAlign: "center", fontSize: "48px"}}>Pokemon</h1>
+        <div style={{width: "75%", display: "flex", margin: "0 auto", padding: "20px"}}>
+            <Pokemons />
+        </div>
     </div>
   );
 }
